@@ -15,14 +15,14 @@ catkin_package()
 
 include_directories(${catkin_INCLUDE_DIRS})
 
-add_executable(battery src/battery.cpp src/fit.cpp)
-target_link_libraries(battery ${catkin_LIBRARIES})
+add_executable(battery2 src/battery.cpp src/fit.cpp)
+target_link_libraries(battery2 ${catkin_LIBRARIES})
 
 #############
 ## Install ##
 #############
 
 
-install(TARGETS battery
+install(TARGETS battery2
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
